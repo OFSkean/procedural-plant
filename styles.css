@@ -1,0 +1,65 @@
+body {
+    background-color: #9c8aa4;
+}
+
+p {
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 1em;
+    width: 125px;
+    max-width: 125px;
+    text-align: right;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 2em;
+}
+
+select {
+    margin: 0 30px;
+    width: 100px;
+}
+
+.color {
+    margin: 0 20px;
+}
+
+.settings {
+    border: 2px solid black;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.settings div {
+    display: flex;
+    padding: 0.25em;
+}
+
+#plantButtonDiv {
+    justify-content: center;
+}
+
+#newPlantButton {
+    width: 200px;
+}
+
+hr {
+    flex-basis: 100%;
+    top: 40px;
+    height: 0;
+    margin: 0;
+    border: 1px solid black;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

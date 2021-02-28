@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GenTree - Procedurally Generated Trees</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/07fb2741fa.js" crossorigin="anonymous"></script>
+    <script src=//cdnjs.cloudflare.com/ajax/libs/seedrandom/2.3.10/seedrandom.min.js></script>
+</head>
+
+<body>
+    <form id="settingsForm">
+        <div class="settings">
+            <div>
+                <h1>Simulation</h1>
+            </div>
+            <div>
+                <p>Type</p>
+                <select id="type">
+                </select>
+            </div>
+            <div>
+                <p>Iterations</p>
+                <input id="iterations" class="mdl-slider mdl-js-slider" type="range" min="1" max="7" value="5"></input>
+            </div>
+            <div>
+                <p>Seed</p>
+                <input id="seed" type="text"></input>
+            </div>
+            <div>
+                <h1>Leaves</h1>
+            </div>
+            <div>
+                <p>Draw Leaves</p>
+                <input id="leaf.enabled" type="checkbox" checked=true></input>
+            </div>
+            <div>
+                <p>Type</p>
+                <select id="leaf.type">
+                </select>
+            </div>
+            <div>
+                <p>Color</p>
+                <input id="leaf.color" class="color" type="color"></input>
+            </div>
+            <div>
+                <p>Size</p>
+                <input id="leaf.size" class="mdl-slider mdl-js-slider" type="range" min="1" max="10" step=0.1></input>
+            </div>
+            <div>
+                <h1>Branches</h1>
+            </div>
+            <div>
+                <p>Color</p>
+                <input id="branch.color" class="color" type="color"></input>
+            </div>
+            <div>
+                <p>Length</p>
+                <input id="branch.length" class="mdl-slider mdl-js-slider" type="range" min="0.5" max="75.0" value="7.0" step=0.1></input>
+            </div>
+            <div>
+                <p>Width</p>
+                <input id="branch.width" class="mdl-slider mdl-js-slider" type="range" min="0.5" max="15.0" value="4.0" step="0.5"></input>
+            </div>
+            <div>
+                <p>Angle</p>
+                <input id="branch.angle" class="mdl-slider mdl-js-slider" type="range" min="-120" max="120" step="0.5"></input>
+            </div>
+            <hr>
+            <div id="plantButtonDiv">
+                <button id="newPlantButton" type='button'>Make New Plant</button>
+            </div>
+        </div>
+    </form>
+    <canvas id="treeCanvas" width="800px" height="800px"></canvas>
+    <script type="module" src="scripts/Gentree.js"></script>
+</body>
+
+</html>
