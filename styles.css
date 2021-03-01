@@ -63,3 +63,12 @@ canvas {
     right: 0;
     margin: auto;
 }
+
+
+/* Hide settings on mobile  */
+
+@media (pointer:coarse) {
+    .settings {
+        display: none;
+    }
+}
