@@ -71,8 +71,6 @@ export class LindermayerSystem {
         Performs n iterations of the l-system over the axiom.
     */
     generateString() {
-
-        console.log("Generating string");
         this.currentState = this.axiom;
 
         for (let i = 0; i < this.iterations; i++) {

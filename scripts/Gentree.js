@@ -66,7 +66,6 @@ function randomColor() {
 
 // creates a bunch of random values like branch length, color, etc
 function randomizeRenderValues() {
-    console.log("Randomizing render values");
     document.getElementById("branch.color").value = randomColor();
     document.getElementById("leaf.color").value = randomColor();
 
@@ -103,7 +102,6 @@ function addLeafTypesToSelect() {
 }
 
 function updateFieldsWithTypeDefaults(ruleset) {
-    console.log("Updating defaults")
     document.getElementById("branch.angle").value = ruleset.defaultBranchAngle;
 }
 
