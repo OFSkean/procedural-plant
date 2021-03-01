@@ -70,6 +70,22 @@ canvas {
 
 @media (pointer:coarse) {
     .settings {
-        display: none;
+        visibility: hidden;
+    }
+    #plantButtonDiv {
+        visibility: visible;
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        margin-left: -200px;
+    }
+    #newPlantButton {
+        border-radius: 25px;
+        width: 400px;
+        height: 100px;
+        font-size: 50px;
+        background-color: #826B57;
+        color: #FFFFFF;
+        text-transform: lowercase;
     }
 }
